@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "authorization-code-flow-demo-ui": {
+    "authorization-code-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -37,7 +37,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/authorization-code-flow-demo-ui",
+            "outputPath": "dist/authorization-code-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,11 +74,6 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
                 }
               ]
             }
@@ -87,21 +82,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "authorization-code-flow-demo-ui:build"
+            "browserTarget": "authorization-code-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "authorization-code-flow-demo-ui:build:production"
+              "browserTarget": "authorization-code-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "authorization-code-flow-demo-ui:build"
+            "browserTarget": "authorization-code-demo:build"
           }
         }
       }
     }},
-  "defaultProject": "authorization-code-flow-demo-ui"
+  "defaultProject": "authorization-code-demo"
 }
