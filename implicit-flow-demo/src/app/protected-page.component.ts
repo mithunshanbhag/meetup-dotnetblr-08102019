@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <div style="text-align:center">
     <h1>{{title}}</h1>
-  </div>    
+  </div>
 `,
   styles: []
 })
@@ -17,5 +17,6 @@ export class ProtectedPageComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('In ProtectedPageComponent::ngOnInit');
   }
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Auth0DecodedHash, WebAuth } from 'auth0-js';
 import { Constants } from './constants';
 
@@ -15,7 +16,7 @@ export class AuthService {
 
   private authClient: WebAuth;
 
-  constructor() {
+  constructor(private router: Router) {
     this.authClient = new WebAuth({
       domain: Constants.auth0Domain,
       clientID: Constants.auth0ClientId,
@@ -49,6 +50,7 @@ export class AuthService {
         // clear the hash fragment from the address bar
         window.location.hash = '';
         this.setSession(authResult);
+        this.router.navigate(['/protected']);
       } else if (err) {
         console.log(err);
       }

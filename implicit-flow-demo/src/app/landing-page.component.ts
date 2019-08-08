@@ -7,7 +7,7 @@ import { AuthService } from './auth.service';
     <div style="text-align:center">
       <h1>{{title}}</h1>
       <button (click)="authService.login()">login</button>
-    </div>    
+    </div>
   `,
   styles: []
 })
@@ -19,5 +19,6 @@ export class LandingPageComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('In LandingPageComponent::ngOnInit');
   }
 }

@@ -7,7 +7,7 @@ import { AuthService } from './auth.service';
   template: `
       <div style="text-align:center">
         <h1>{{title}}</h1>
-      </div>    
+      </div>
 `,
   styles: []
 })
@@ -19,7 +19,7 @@ export class AuthCallbackComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('In AuthCallbackComponent::ngOnInit');
     this.authService.handleAuthentication();
-    this.router.navigate(['/protected']);
   }
 }

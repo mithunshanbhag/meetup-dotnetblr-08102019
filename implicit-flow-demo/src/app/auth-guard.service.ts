@@ -12,9 +12,13 @@ export class AuthGuardService {
   }
 
   canActivate(): boolean {
+    console.log('In AuthGuardService::canActivate');
+
     if (this.authService.isAuthenticated()) {
+      console.log('authenticated = true');
       return true;
     } else {
+      console.log('authenticated = false. Routing to landing page');
       this.router.navigate(['/']);
       return false;
     }
