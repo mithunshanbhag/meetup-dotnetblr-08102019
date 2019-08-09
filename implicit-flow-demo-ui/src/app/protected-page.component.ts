@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ProtectedPageComponent implements OnInit {
-  title = 'demo: implicit flow (protected-page-component)';
+  title = 'demo: implicit flow (protected page)';
 
   constructor() {
     console.log('In ProtectedComponent::ctor');

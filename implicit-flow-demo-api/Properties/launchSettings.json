@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "authorization_code_flow_demo_api": {
+    "implicit_flow_demo_api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

@@ -23,6 +23,7 @@ export class AuthService {
       responseType: Constants.auth0ResponseType,
       redirectUri: Constants.auth0RedirectUri,
       scope: Constants.auth0Scope,
+      audience: Constants.auth0Audience,
     });
   }
 

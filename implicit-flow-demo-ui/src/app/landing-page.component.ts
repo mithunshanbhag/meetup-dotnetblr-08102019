@@ -12,7 +12,7 @@ import { AuthService } from './auth.service';
   styles: []
 })
 export class LandingPageComponent implements OnInit {
-  title = 'demo: authorization code flow (landing-page-component)';
+  title = 'demo: implicit flow (landing page)';
 
   constructor(public authService: AuthService) {
     console.log('In LandingPageComponent::ctor');

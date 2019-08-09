@@ -4,6 +4,6 @@ export class Constants {
     public static readonly auth0RedirectUri = 'http://localhost:4200/authcallback';
     public static readonly auth0ResponseType = 'token id_token';
     public static readonly auth0Scope = 'openid email profile';
-    public static readonly auth0Audience = '';
+    public static readonly auth0Audience = 'https://dotnetblr-demo-implicit-flow-api';
   }
   

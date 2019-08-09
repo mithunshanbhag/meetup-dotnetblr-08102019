@@ -12,7 +12,7 @@ import { AuthService } from './auth.service';
   styles: []
 })
 export class AuthCallbackComponent implements OnInit {
-  title = 'demo: implicit flow (auth-callback-component)';
+  title = 'demo: implicit flow (authcallback)';
 
   constructor(private router: Router, private authService: AuthService) {
     console.log('In AuthCallbackComponent::ctor');

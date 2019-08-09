@@ -3,7 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <RootNamespace>authorization_code_flow_demo_api</RootNamespace>
+    <RootNamespace>implicit_flow_demo_api</RootNamespace>
+    <AssemblyName>implicit-flow-demo-api</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
